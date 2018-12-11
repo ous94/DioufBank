@@ -1,4 +1,4 @@
-package com.base.Metier;
+package com.base.Entities;
 
 import java.io.Serializable;
 import java.util.Collection;
@@ -24,7 +24,7 @@ public abstract class Compte implements Serializable {
 	@Id
 	private String codeClient;
 	private Date  dateCreation;
-	private Double solde;
+	private double solde;
 	@ManyToOne
 	@JoinColumn(name="CODE_CLI")
 	private Client client;
@@ -34,7 +34,7 @@ public abstract class Compte implements Serializable {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Compte(String codeClient, Date dateCreation, Double solde, Client client) {
+	public Compte(String codeClient, Date dateCreation, double solde, Client client) {
 		super();
 		this.codeClient = codeClient;
 		this.dateCreation = dateCreation;
@@ -52,11 +52,12 @@ public abstract class Compte implements Serializable {
 	}
 	public void setDateCreation(Date dateCreation) {
 		this.dateCreation = dateCreation;
-	}
-	public Double getSolde() {
+		}
+	public double getSolde() {
 		return solde;
 	}
-	public void setSolde(Double solde) {
+	
+	public void setSolde(double solde) {
 		this.solde = solde;
 	}
 	public Client getClient() {

@@ -1,4 +1,4 @@
-package com.base.Metier;
+package com.base.Entities;
 
 import java.util.Date;
 
@@ -16,7 +16,7 @@ public class CompteCourant extends Compte{
 		// TODO Auto-generated constructor stub
 	}
 
-	public CompteCourant(String codeClient, Date dateCreation, Double solde, Client client, double decouvert) {
+	public CompteCourant(String codeClient, Date dateCreation, double solde, Client client, double decouvert) {
 		super(codeClient, dateCreation, solde, client);
 		Decouvert = decouvert;
 	}

@@ -1,4 +1,4 @@
-package com.base.Metier;
+package com.base.Entities;
 
 import java.io.Serializable;
 import java.util.Collection;
